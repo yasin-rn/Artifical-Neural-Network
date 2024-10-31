@@ -42,7 +42,7 @@ namespace ANN.Layers
             A = new float[PerceptronSize];
             B = new float[PerceptronSize];
             W = Enumerable.Range(0, inputSize * perceptronSize).Select(x => (float)(((Random.NextDouble() * 2) - 1))).ToArray();
-
+           
             dW = new float[inputSize * perceptronSize];
             dB = new float[perceptronSize];
             dE = new float[perceptronSize];
@@ -98,8 +98,8 @@ namespace ANN.Layers
         public void Update(float lr)
         {
             // Update weights and biases by scaling gradients with the learning rate
-            Blas.cblas_saxpy(W.Length, 0f - lr, dW, 1, W, 1);
-            Blas.cblas_saxpy(B.Length, 0f - lr, dB, 1, B, 1);
+            Blas.cblas_saxpy(W.Length, -lr, dW, 1, W, 1);
+            Blas.cblas_saxpy(B.Length, -lr, dB, 1, B, 1);
 
             // Reset gradients after each update
             ResetGradients();
