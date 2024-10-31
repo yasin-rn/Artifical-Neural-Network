@@ -1,0 +1,111 @@
+# .NET gitignore file
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+build/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Mono Auto Generated Files
+data.db
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# SVN directories
+.svn/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Rider External annotations
+.resharper/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# DotNetCore
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# StyleCop
+StyleCopReport.xml
+
+# Files built by Visual Studio
+*.exe
+*.dll
+*.pdb
+*.appx
+*.appxbundle
+*.appxupload
+*.vscode
+
+# Visual Studio directories
+.vs/
+.vscode/
+
+# Visual Studio Code
+.history/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Entity Framework
+*.jfm
+
+# Windows Azure
+*.publishsettings
+
+# DocProject files
+DocProject/buildhelp/
+DocProject/Help/*.HxT
+DocProject/Help/*.HxC
+DocProject/Help/*.HxK
+DocProject/Help/*.HxS
+DocProject/Help/*.HxI
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# VS Code workspace file
+*.code-workspace
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
